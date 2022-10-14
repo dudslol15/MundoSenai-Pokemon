@@ -1,5 +1,5 @@
 let form = document.querySelector("#form")
-var inPoke = document.getElementById("#inPoke")
+let inPoke = document.getElementById("#inPoke")
 let inAd = document.getElementById("#inAd")
 let inNext = document.getElementById("#inNext")
 let inDex = document.getElementById("#inDex")
@@ -10,7 +10,7 @@ let pokedex = [[],[],[],[],[],[],[]]
 form.addEventListener("click", (e) => {
     e.preventDefault()
 
-    const poke = inPoke.value
+    let poke = inPoke.value
     resp.innerText = `Pokémon: ${poke}`
 
 })
