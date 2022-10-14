@@ -33,7 +33,7 @@ for (let poke = 0; poke < 7; poke++) {
 //Descontração final com uma condicional para saber o seu Pokémon favorito
 let fav = prompt("Qual seu Pokemon favorito?")
 
-if (fav !== "Kyogre") {
+if (fav.toUpperCase() !== "KYOGRE") {
   console.log(`Seu Pokémon favorito é ${fav}? Péssima escolha...`)
 } else {
   console.log("Você é uma pessoa de cultura escolhendo o Kyogre!")
