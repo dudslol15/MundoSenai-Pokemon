@@ -8,16 +8,16 @@ frm.addEventListener("click", (e) => {
   e.preventDefault()
 
   //Vetores e subvetores para definir cada geração pokémon:
-  let geracao = [[], [], [], [], [], []]
+  let geracao = [[]]
 
   //Laço de repetição que pergunta os nomes dos Pokémon encontrados:
-  for (let numPoke = 0; numPoke < 6; numPoke++) {
+  for (let numPoke = 0; numPoke < 1; numPoke++) {
     while (true) {
       let pokemon = prompt(`Digite o Pokémon encontrado na geração ${numPoke + 1}.
-     Digite 'next' para para a próxima geração.`)
+     Digite 'fim' para terminar.`)
 
       //Condicional para seguir para a próxima geração ou colocar no subvetor o nome do Pokémon:
-      if (pokemon.toUpperCase() === `NEXT`) {
+      if (pokemon.toUpperCase() === `FIM`) {
         break
       } else geracao[numPoke].push(pokemon)
     }
@@ -26,18 +26,13 @@ frm.addEventListener("click", (e) => {
     let regiao
     switch (numPoke) {
       case 0: regiao = "Kanto"; break
-      case 1: regiao = "Johto"; break
-      case 2: regiao = "Hoenn"; break
-      case 3: regiao = "Sinoh"; break
-      case 4: regiao = "Unova"; break
-      case 5: regiao = "Kalos"; break
     }
 
     respReg.innerHTML = `Os Pokémon encontrados em ${regiao} são:` + "<br>"
 
     //Laço de repetição para mostrar todos os Pokémon encontrados
     for (let poke = 0; geracao[numPoke][poke] !== undefined; poke++)
-      respPoke.innerHTML = respPoke + `, ${geracao[numPoke][poke]}` + "<br>"
+      respPoke.innerHTML = `, ${geracao[numPoke][poke]}` + "<br>"
   }
   //Descontração final com uma condicional para saber o seu Pokémon Lendário favorito
   let fav = prompt("Qual seu Pokemon Lendário favorito?")
