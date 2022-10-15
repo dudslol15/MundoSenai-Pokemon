@@ -14,7 +14,7 @@ frm.addEventListener("click", (e) => {
   for (let numPoke = 0; numPoke < 6; numPoke++) {
     while (true) {
       let pokemon = prompt(`Digite o Pokémon encontrado na geração ${numPoke + 1}.
-     Digite 'next' para para a próxima geração.`)
+     Digite 'next' para ir até a próxima geração.`)
 
       //Condicional para seguir para a próxima geração ou colocar no subvetor o nome do Pokémon:
       if (pokemon.toUpperCase() === `NEXT`) {
@@ -36,8 +36,10 @@ frm.addEventListener("click", (e) => {
     respReg.innerHTML = `Os Pokémon encontrados em ${regiao} são:` + "<br>"
 
     //Laço de repetição para mostrar todos os Pokémon encontrados
-    for (let poke = 0; geracao[numPoke][poke] !== undefined; poke++)
-      respPoke.innerHTML = respPoke + `, ${geracao[numPoke][poke]}` + "<br>"
+    for (let poke = 0; geracao[numPoke][poke] !== undefined; poke++){
+      respPoke.innerHTML = `${geracao[numPoke][poke]}` + "<br>"
+      }
+    
   }
   //Descontração final com uma condicional para saber o seu Pokémon Lendário favorito
   let fav = prompt("Qual seu Pokemon Lendário favorito?")
@@ -45,6 +47,6 @@ frm.addEventListener("click", (e) => {
   if (fav.toUpperCase() !== "KYOGRE") {
     respFav.innerHTML = `Seu Lendário favorito é ${fav}? Péssima escolha...`
   } else {
-    respFav.innerHTML = `Você é uma pessoa de cultura escolhendo o ${fav}!`
+    respFav.innerHTML = `Você é uma pessoa de cultura escolhendo o Kyogre!`
   }
 })
