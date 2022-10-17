@@ -37,7 +37,7 @@ frm.addEventListener("click", (e) => {
 
     //Laço de repetição para mostrar todos os Pokémon encontrados
     for (let poke = 0; geracao[numPoke][poke] !== undefined; poke++){
-      respPoke.innerHTML = `${geracao[numPoke][poke]}` + "<br>"
+        respPoke.innerHTML = `${geracao[numPoke][poke]}` + "<br>"
       }
     
   }
