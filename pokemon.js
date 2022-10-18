@@ -11,7 +11,8 @@ let saidaUnova = document.getElementById("regiaoUnova")
 let saidaPokeUnova = document.getElementById("pokeUnova")
 let saidaKalos = document.getElementById("regiaoKalos")
 let saidaPokeKalos = document.getElementById("pokeKalos")
-let saidaFav = document.querySelector("#fav")
+let saidaFavPoke = document.querySelector("#favPoke")
+let saidaFavRegiao = document.querySelector("#favReg")
 
 frm.addEventListener("click", (e) => {
   //previne o envio do Formulario
@@ -69,12 +70,19 @@ frm.addEventListener("click", (e) => {
     saidaPokeKalos.innerText += `${pokes}, `
   }
 
-  //Descontração final com uma condicional para saber o seu Pokémon Lendário favorito
-  let fav = prompt("Qual seu Pokemon Lendário favorito?")
+  //Descontrações finais com condicionais para saber a sua Região e seu Pokémon Lendário favorito
+  let favPoke = prompt("Qual seu Pokemon Lendário favorito?")
 
-  if (fav.toUpperCase() !== "KYOGRE") {
-    saidaFav.innerHTML = `Seu Lendário favorito é ${fav}? Péssima escolha...`
+  if (favPoke.toUpperCase() !== "KYOGRE") {
+    saidaFavPoke.innerHTML = `Seu Lendário favorito é ${favPoke}? Péssima escolha...`
   } else {
-    saidaFav.innerHTML = `Você é uma pessoa de cultura escolhendo o Kyogre!`
+    saidaFavPoke.innerHTML = `Você é uma pessoa de cultura escolhendo o Kyogre!`
+  }
+  let favRegiao = prompt("Qual sua Região favorita?")
+
+  if (favRegiao.toUpperCase() !== "KANTO") {
+    saidaFavRegiao.innerHTML = `Sua Região favorita é ${favRegiao}? Péssima escolha...`
+  } else {
+    saidaFavRegiao.innerHTML = `Você é um cara interessante, Kanto é maravilhoso!!`
   }
 })
