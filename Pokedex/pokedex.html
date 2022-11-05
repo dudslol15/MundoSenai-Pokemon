@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Pokédex de Kanto</title>
 <script src="../pokedex novo/pokedex.js"></script>
 <link rel="stylesheet" href="../pokedex novo/pokex.css">
@@ -14,7 +14,7 @@
 
     <h1>Pokédex</h1>
 <div id="pokemons" onclick="tocar()">
-    <a href="001 - Bulbasaur.png"><img src="001.png" width="140" weight="140"></a>
+    <!-- <a href="001 - Bulbasaur.png"><img src="001.png" width="140" weight="140"></a>
     <a href="002 - Ivysaur.png"><img src="002.png" width="140" weight="140"></a>
     <a href="003 - Venusaur.png"><img src="003.png" width="140" weight="140"></a>
     <a href="004 - Charmander.png"><img src="004.png" width="140" weight="140"></a>
@@ -164,10 +164,29 @@
     <a href="148 - Dragonair.png"><img src="148.png" width="140" weight="140"></a>
     <a href="149 - Dragonite.png"><img src="149.png" width="140" weight="140"></a>
     <a href="150 - Mewtwo.png"><img src="150.png" width="140" weight="140"></a>
-    <a href="151 - Mew.png" ><img src="151.png" width="140" weight="140"></a>
-    <button id="mew"></button>
-
+    <a href="151 - Mew.png" ><img src="151.png" width="140" weight="140"></a> -->
+    <!-- <button id="Mew"><img src="151.png" alt="mew" onload="mew1"></button> -->
 </div>
+<!-- Button trigger modal -->
+<button type="button" class="btnbtn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <img width="140" weight="140" src="151.png" alt="">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Mew</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="mew150" src="151 - Mew.png" alt="" width="543" weight="785">
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
 </body>
 
 </html>
