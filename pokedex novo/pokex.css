@@ -1,3 +1,18 @@
+body{
+margin: 0;
+
+
+}
+
+#imagem{    
+width:100vw;
+height:100vh;
+background: url(https://i.pinimg.com/originals/93/98/94/9398944b931f51d4ab0a8e92f44ca452.jpg);
+background-size: contain;
+
+
+}
+
 #Mew{
     border-style: none;
     background-color: white;
