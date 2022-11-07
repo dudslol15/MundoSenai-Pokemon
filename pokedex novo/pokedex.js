@@ -4,8 +4,6 @@ let snolax = document.querySelector("#Snolax")
 let mew = document.querySelector("#Mew")
 let teste = document.getElementById("teste")
 
-
-
 //teste.addEventListener("click", tocar)
 function tocar() {
     console.log("foi")
