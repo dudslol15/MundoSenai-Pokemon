@@ -13,14 +13,7 @@ background-size: contain;
 
 }
 
-#Mew{
+.bulba,.ivy{
     border-style: none;
-    background-color: rgba(255, 255, 255, 0);
-}
-.btnbtn-primary{
-    border-style: none;
-    background-color: white;
-}
-#buu{
     background-color: rgba(255, 255, 255, 0);
 }
